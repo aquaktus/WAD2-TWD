@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+{% load staticfiles %} <!-- New line -->
+
+    <head>
+        <title>About Rango</title>
+    </head>
+
+    <body>
+        <h1>Rango says...</h1>
+        <div>
+            How can I help... Welcome to the about page! <br />
+            <strong>{{ boldmessage }}</strong><br />
+        </div>
+        <div>
+            <a href='/rango/'>Index</a><br />
+           <img src="{{ MEDIA_URL}}cat.jpg">
+        </div>
+    </body>
+
+</html>
