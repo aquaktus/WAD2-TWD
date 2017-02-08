@@ -1,22 +1,20 @@
-<!DOCTYPE html>
-<html>
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
 
-{% load staticfiles %} <!-- New line -->
+{% block title_block %}
+	{{ category.name }}
+{% endblock %}
 
-    <head>
-        <title>About Rango</title>
-    </head>
-
-    <body>
+{% block body_block %}
         <h1>Rango says...</h1>
         <div>
             How can I help... Welcome to the about page! <br />
         </div>
         <div>
-            <a href='/rango/'>Index</a><br />
            <img src="{{ MEDIA_URL}}cat.jpg">
 	   <img src="/static/images/rango.jpg">
         </div>
-    </body>
+{% endblock %}
 
-</html>
+{% block aboutLink_block %}
+{% endblock %}
